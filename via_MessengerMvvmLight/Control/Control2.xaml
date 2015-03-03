@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="TestSwipeUserControls.View.Control2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             Background="Green" Height="auto" Width="auto"
+             DataContext="{Binding Source={StaticResource Locator}, Path=Main}">
+
+    <Grid Margin="10">
+        <TextBlock Text=" Control 2" />
+        <Button Content="C1" HorizontalAlignment="Left"  Width="75" Height="20"
+                    Command="{Binding GoToControl1Command}" Margin="96,167,-96,-167" />
+        <Button Content="C2" HorizontalAlignment="Left"  Width="75" Height="20"
+                    Command="{Binding GoToControl2Command}" Margin="230,65,-230,-65" />
+        <Button Content="C3" HorizontalAlignment="Left"  Width="75" Height="20"
+                    Command="{Binding GoToControl3Command}" Margin="376,167,-376,-167" />
+    </Grid>
+</UserControl>
