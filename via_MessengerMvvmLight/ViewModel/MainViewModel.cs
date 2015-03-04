@@ -1,34 +1,39 @@
 using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.CommandWpf;
+using GalaSoft.MvvmLight.Messaging;
+using System.Windows.Controls;
+using via_MessengerMvvmLight.Message;
 
 namespace via_MessengerMvvmLight.ViewModel
 {
-    /// <summary>
-    /// This class contains properties that the main View can data bind to.
-    /// <para>
-    /// Use the <strong>mvvminpc</strong> snippet to add bindable properties to this ViewModel.
-    /// </para>
-    /// <para>
-    /// You can also use Blend to data bind with the tool's support.
-    /// </para>
-    /// <para>
-    /// See http://www.galasoft.ch/mvvm
-    /// </para>
-    /// </summary>
     public class MainViewModel : ViewModelBase
     {
-        /// <summary>
-        /// Initializes a new instance of the MainViewModel class.
-        /// </summary>
+        public RelayCommand GoToControl1Command { get; set; }
+
+        public RelayCommand GoToControl2Command { get; set; }
+
+        public RelayCommand GoToControl3Command { get; set; }
+
         public MainViewModel()
         {
-            ////if (IsInDesignMode)
-            ////{
-            ////    // Code runs in Blend --> create design time data.
-            ////}
-            ////else
-            ////{
-            ////    // Code runs "for real"
-            ////}
+            GoToControl1Command = new RelayCommand(GoToControl1);
+            GoToControl2Command = new RelayCommand(GoToControl2);
+            GoToControl3Command = new RelayCommand(GoToControl3);
+        }
+
+        private void GoToControl1()
+        {
+            Messenger.Default.Send(new ChangeViewMessage("1"));
+        }
+
+        private void GoToControl2()
+        {
+            Messenger.Default.Send(new ChangeViewMessage("2"));
+        }
+
+        private void GoToControl3()
+        {
+            Messenger.Default.Send(new ChangeViewMessage("3"));
         }
     }
 }

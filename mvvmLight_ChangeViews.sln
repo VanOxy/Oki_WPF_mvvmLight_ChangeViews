@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "via_DataTemplate", "TestSwipeUserControls\via_DataTemplate.csproj", "{AA9845A2-4600-4A0F-9162-1CC9A7AB0610}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "via_DataTemplate_1", "TestSwipeUserControls\via_DataTemplate_1.csproj", "{AA9845A2-4600-4A0F-9162-1CC9A7AB0610}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "via_MessengerMvvmLight", "via_MessengerMvvmLight\via_MessengerMvvmLight.csproj", "{CC46AA69-57FD-40A3-A7F9-4D5539D62C8D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "via_MessengerMvvmLight_2", "via_MessengerMvvmLight\via_MessengerMvvmLight_2.csproj", "{CC46AA69-57FD-40A3-A7F9-4D5539D62C8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
