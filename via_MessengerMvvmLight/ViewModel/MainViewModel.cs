@@ -1,7 +1,6 @@
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
 using GalaSoft.MvvmLight.Messaging;
-using System.Windows.Controls;
 using via_MessengerMvvmLight.Message;
 
 namespace via_MessengerMvvmLight.ViewModel

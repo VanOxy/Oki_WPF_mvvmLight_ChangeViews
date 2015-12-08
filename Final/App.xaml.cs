@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace via_CommandBinding_of_ContentControl
+namespace Final
 {
     /// <summary>
     /// Interaction logic for App.xaml
